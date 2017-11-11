@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/black"
+    >
+<View
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcf8d4"
+    android:layout_margin="6dp"
+    >
+
+</View>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="#111628"
+        >
+
+
+    </View>
+
+
+    <ImageView
+
+        android:id="@+id/img_v"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/listItem_Image" />
+
+
+</android.support.constraint.ConstraintLayout>

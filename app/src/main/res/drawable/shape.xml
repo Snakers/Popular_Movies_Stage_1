@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_pressed="true"
+    android:drawable="@mipmap/upland"
+    android:state_accelerated="true"
+    >
+
+    <shape
+        android:shape="oval"
+        android:innerRadius="20dp">
+        <corners android:radius="10dp"/>
+
+        <gradient android:angle="90"
+
+    android:startColor="#ffbb00"
+    android:endColor="#ff2b2e"/>
+
+    </shape>
+
+</item>
+
+</selector>

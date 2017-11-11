@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Glass Fish</string>
+    <string name="listItem_Image">Poster Image</string>
+    <string name="backButtonImage">back button image</string>
+    <string name="movieDescription">Description : </string>
+    <string name="releaseDate">Release Date : </string>
+    <string name="parallaxImage">parallax image poster</string>
+    <string name="vote"> Vote Rate : </string>
+    <string name="itemTitle">Welcome</string>
+
+
+
+</resources>

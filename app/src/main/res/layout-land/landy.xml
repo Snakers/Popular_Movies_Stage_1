@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:configChanges="orientation|screenLayout|screenSize"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_column="2"
+    android:background="@color/black">
+   <FrameLayout android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <android.support.design.widget.FloatingActionButton
+           app:fabSize="mini"
+           android:scaleType="fitXY"
+
+           android:id="@+id/landFab"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+android:adjustViewBounds="true"
+           android:foreground="@drawable/shape"
+           android:layout_gravity="bottom|right"
+           android:layout_marginBottom="50dp"
+           android:layout_marginRight="35dp"
+           />
+
+
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/recy"
+    android:layout_margin="10dp" >
+
+
+</android.support.v7.widget.RecyclerView>
+   </FrameLayout>
+
+</GridLayout>

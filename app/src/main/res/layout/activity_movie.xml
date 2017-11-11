@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cord"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myapplication.bluray.com.popular_movies_stage_1.MovieActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/collapsingToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        android:fitsSystemWindows="true"
+        app:contentScrim="?attr/colorPrimary"
+        app:expandedTitleMarginStart="48dp"
+        app:expandedTitleMarginEnd="64dp"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:contentDescription="@string/parallaxImage"
+            android:id="@+id/toolbarImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:layout_collapseMode="parallax" />
+            <ImageView
+android:layout_margin="15dp"
+                android:contentDescription="@string/backButtonImage"
+                android:background="@mipmap/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/backs"
+                android:fitsSystemWindows="true"
+                />
+        </FrameLayout>
+</android.support.design.widget.CollapsingToolbarLayout>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_collapseMode="pin" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+<android.support.v4.widget.NestedScrollView
+android:layout_width="match_parent"
+     android:background="#fffed3"
+android:layout_height="match_parent"
+app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:background="#00de3b"
+            android:id="@+id/Movie_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:lineSpacingExtra="8dp"
+
+
+            android:layout_marginTop="2dp"
+            android:textAppearance="@style/Base.Theme.AppCompat.Dialog.FixedSize"
+android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:fontFamily="serif"
+            tools:targetApi="jelly_bean" />
+
+        <TextView
+android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:id="@+id/overview"
+            android:textAppearance="@style/Widget.Design.Snackbar"
+android:text="@string/movieDescription"
+            android:textStyle="bold"
+            android:layout_marginBottom="3dp"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+android:textColor="#1363e2"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/description"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+
+            android:layout_marginLeft="5dp"
+            android:textAppearance="@style/Widget.Design.AppBarLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:text="@string/releaseDate"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/releaseData"
+            android:gravity="center" />
+
+<TextView
+    android:textAppearance="@style/Widget.Design.AppBarLayout"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="@string/vote"
+    android:gravity="center"
+    android:textSize="17sp"
+    android:textStyle="bold"
+    android:layout_marginTop="12dp"
+    android:fontFamily="sans-serif"
+    tools:targetApi="jelly_bean" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/vote"
+           android:layout_marginTop="5dp"
+            android:gravity="center|bottom"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
+
+
+<android.support.design.widget.FloatingActionButton
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+
+    android:foreground="@mipmap/favitem"
+android:backgroundTint="#11ff00"
+    app:layout_anchorGravity="right|bottom"
+android:id="@+id/starFav"
+    android:scaleType="center"
+app:layout_anchor="@id/appBar"
+
+    tools:targetApi="lollipop" />
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
